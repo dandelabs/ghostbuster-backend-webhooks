@@ -1,0 +1,13 @@
+{
+    "main": {
+    	"hostname":"0.0.0.0:8080"
+    },
+	"db": {
+		"url": "app:pfDandelabs@tcp(localhost:3306)/pfoptimization"
+	},
+	"crypto": {
+		"salt_size": 16,
+		"iterations": 4096,
+		"key_size": 32
+	}
+}

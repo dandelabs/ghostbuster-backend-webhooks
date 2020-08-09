@@ -1,0 +1,91 @@
+package api
+
+type Data struct {
+	UserId    string
+	FirstName string `sql:"first_name" json:"first_name"`
+	LastName  string `sql:"last_name" json:"last_name"`
+	NickName  string `sql:"nick_name" json:"nick_name"`
+	Password  string
+}
+
+{
+  "data": {
+    "partially_cancel": false,
+    "sync_created": "2019-05-03 09:09:00",
+    "order_status": "confirm",
+    "is_back_order": false,
+    "id": 4178449,
+    "order_items": [
+      {
+        "note": "Make a Gift pack",
+        "quantity_shipped": 0,
+        "quantity_returned": 0,
+        "item_id": 15514637,
+        "quantity_delivered": 0,
+        "quantity_cancelled": 0,
+        "quantity_ordered": 1,
+        "id": 884970,
+        "sku": "DEMOPRODUCT6",
+      }
+    ],
+    "modified_date": "2019-05-03 09:09:03",
+    "custom_fields_listing": [
+      {
+        "name": "gift wrap",
+        "type": "CHECKBOX",
+        "value": true
+      },
+      {
+        "name": "gift wraps",
+        "type": "CHECKBOX",
+        "value": true
+      },
+      {
+        "name": "test",
+        "type": "NUMBER",
+        "value": "123"
+      },
+      {
+        "name": "order",
+        "type": "CHECKBOX",
+        "value": true
+      },
+      {
+        "name": "order1",
+        "type": "CHECKBOX",
+        "value": true
+      },
+      {
+        "name": "mycheckbox",
+        "type": "CHECKBOX",
+        "value": true
+      },
+      {
+        "name": "mycheckbox1",
+        "type": "CHECKBOX",
+        "value": true
+      }
+    ],
+    "order_extra_items": [
+      {
+        "quantity_shipped": 0,
+        "row_total": 0,
+        "quantity_cancelled": 0,
+        "type": "SHIPPING_COST",
+        "quantity_ordered": 1,
+        "display_type": "Shipping and handling",
+        "tax_percent": 0,
+        "quantity_invoiced": 0,
+        "tax_value": 0,
+        "price": 0,
+        "name": "Shipping",
+        "quantity_packed": 0,
+        "id": 393117,
+        "quantity_available": 0
+      }
+    ]
+  },
+  "event_name": "orderCreated",
+  "request_id": "221c91d0-f479-4001-8beb-fcbe04c97a26",
+  "timestamp": "1556874545334"
+}

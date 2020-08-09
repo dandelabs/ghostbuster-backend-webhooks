@@ -1,0 +1,26 @@
+FROM sales_orders so INNER JOIN contacts co ON so.contact_id = co.id 
+WHERE so.due_date is not NULL
+limit 0,10;
+
+select soi.id, soi.sales_order_id, soi.item_id, soi.qty_ordered FROM sales_order_items soi limit 0,10;
+
+
+curl -X POST http://localhost:8080/api/order \
+-d"{
+    \"order\": {
+      \"order_id\": 36002, 
+      \"order_customer_name\": \"Nicole Waterson\",
+      \"order_due_date\": \"2016-11-02\",
+      \"priority_status\": 0,
+      \"created\": \"2018-08-14 02:34:15\",
+      \"modified\": \"2018-08-15 04:43:52\"
+    },
+    \"order_details\": [
+      {
+        \"detail_id\": 70241,
+        \"order_id\": 36002,
+        \"item_id\": 11003,
+        \"quantity\": 1
+      }
+    ]
+  }"

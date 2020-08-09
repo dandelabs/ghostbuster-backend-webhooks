@@ -1,0 +1,155 @@
+curl -X POST http://localhost:8080/api/order \
+-d "{\"Data\":
+{
+\"sales_person\": 
+{\"name\": \"Mandeep Arora\",
+\"id\": 8135}
+}
+}" 
+
+
+curl -X POST http://localhost:8080/api/order \
+-d"{
+  \"data\": {
+    \"sales_person\": {
+      \"name\": \"Mandeep Arora\",
+      \"id\": 8135
+    },
+    \"partially_cancel\": false,
+    \"remark\": \"\",
+    \"billing_address\": {
+      \"zipcode\": \"85123\",
+      \"country\": \"United States\",
+      \"country_code\": \"US\",
+      \"address2\": \"\",
+      \"city\": \"PHOENIX\",
+      \"address1\": \"200 E MAIN ST\",
+      \"name\": \"Jane Roe\",
+      \"company\": \"\",
+      \"state\": \"AZ\",
+      \"email\": \"demo.jane.roe@gmail.com\",
+      \"contact_number\": \"+1-202-505-0186\"
+    },
+    \"channel_order_id\": \"163\",
+    \"contact_id\": 246925148,
+    \"sync_created\": \"2019-05-03 09:09:00\",
+    \"order_status\": \"confirm\",
+    \"total\": 499,
+    \"store_name\": \"Orderhive\",
+    \"is_back_order\": false,
+    \"currency\": \"INR\",
+    \"id\": 4178449,
+    \"shipping_address\": {
+      \"zipcode\": \"85123\",
+      \"country\": \"United States\",
+      \"country_code\": \"US\",
+      \"address2\": \"\",
+      \"city\": \"PHOENIX\",
+      \"address1\": \"200 E MAIN ST\",
+      \"name\": \"Jane Roe\",
+      \"company\": \"\",
+      \"state\": \"AZ\",
+      \"email\": \"demo.jane.roe@gmail.com\",
+      \"contact_number\": \"+1-202-505-0186\"
+    },
+    \"invoice_created\": false,
+    \"payment_method\": \"PayPal\",
+    \"order_items\": [
+      {
+        \"note\": \"Make a Gift pack\",
+        \"quantity_shipped\": 0,
+        \"quantity_returned\": 0,
+        \"item_id\": 15514637,
+        \"quantity_delivered\": 0,
+        \"discount_value\": 0,
+        \"weight\": 0,
+        \"row_total\": 499,
+        \"quantity_cancelled\": 0,
+        \"discount_type\": \"percent\",
+        \"quantity_ordered\": 1,
+        \"tax_percent\": 0,
+        \"quantity_invoiced\": 0,
+        \"tax_value\": 0,
+        \"price\": 499,
+        \"name\": \"Apple watch series 3 (Silver Aluminum case with Fog Sport Band)\",
+        \"quantity_packed\": 0,
+        \"id\": 884970,
+        \"last_purchase_price\": 399,
+        \"sku\": \"DEMOPRODUCT6\",
+        \"discount_percent\": 0,
+        \"barcode\": \"20182006\",
+        \"brand\": \"APPLE\",
+        \"quantity_available\": 0
+      }
+    ],
+    \"store_id\": 63214,
+    \"channel_name\": \"orderhive\",
+    \"payment_status\": \"not_paid\",
+    \"modified_date\": \"2019-05-03 09:09:03\",
+    \"tags\": [],
+    \"delivery_date\": \"2019-04-17\",
+    \"tax_type\": \"inclusive\",
+    \"custom_fields_listing\": [
+      {
+        \"name\": \"gift wrap\",
+        \"type\": \"CHECKBOX\",
+        \"value\": true
+      },
+      {
+        \"name\": \"gift wraps\",
+        \"type\": \"CHECKBOX\",
+        \"value\": true
+      },
+      {
+        \"name\": \"test\",
+        \"type\": \"NUMBER\",
+        \"value\": \"123\"
+      },
+      {
+        \"name\": \"order\",
+        \"type\": \"CHECKBOX\",
+        \"value\": true
+      },
+      {
+        \"name\": \"order1\",
+        \"type\": \"CHECKBOX\",
+        \"value\": true
+      },
+      {
+        \"name\": \"mycheckbox\",
+        \"type\": \"CHECKBOX\",
+        \"value\": true
+      },
+      {
+        \"name\": \"mycheckbox1\",
+        \"type\": \"CHECKBOX\",
+        \"value\": true
+      }
+    ],
+    \"display_number\": \"163\",
+    \"created_date\": \"2019-05-03 09:09:03\",
+    \"channel_id\": 13,
+    \"order_extra_items\": [
+      {
+        \"quantity_shipped\": 0,
+        \"row_total\": 0,
+        \"quantity_cancelled\": 0,
+        \"type\": \"SHIPPING_COST\",
+        \"quantity_ordered\": 1,
+        \"display_type\": \"Shipping and handling\",
+        \"tax_percent\": 0,
+        \"quantity_invoiced\": 0,
+        \"tax_value\": 0,
+        \"price\": 0,
+        \"name\": \"Shipping\",
+        \"quantity_packed\": 0,
+        \"id\": 393117,
+        \"quantity_available\": 0
+      }
+    ],
+    \"warehouse_id\": 10581
+  },
+  \"event_name\": \"orderCreated\",
+  \"request_id\": \"221c91d0-f479-4001-8beb-fcbe04c97a26\",
+  \"timestamp\": \"1556874545334\"
+}"
